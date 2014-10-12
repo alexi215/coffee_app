@@ -6,7 +6,7 @@
 
 ### Technologies Used
 
-* Ruby 1.9.3p32
+* Ruby 1.9.3p327
 * JavaScript
 * SCSS
 * Ruby on rails 4.1.6
