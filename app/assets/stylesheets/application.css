@@ -10,6 +10,59 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require reset.css
  *= require_tree .
  *= require_self
  */
+
+/*body {
+  font-family: Helvetica;
+  background-color: #904420;
+}
+
+.container{
+  
+}
+
+div#results {
+  border-radius: 5; 
+  padding-top: 5px;
+}
+
+h1 {
+  background-color: #4F2512;
+  display: inline-block;
+  font:#F5ECC3 !important;
+  font-size: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+input {
+  padding: 10px;
+}
+
+input#autocomplete {
+  font-size: 15px;
+  width: 500px;
+}
+
+
+ol#places {
+  background-color: #CA902C;
+  font-size: 14px;
+  font-weight: bold;
+  width: 482px;
+}
+
+ol p {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+*/

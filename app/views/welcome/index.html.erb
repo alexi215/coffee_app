@@ -1,28 +1,26 @@
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
     
   </head>
   <body>
-    
-    <div id="locationField">
-      <input id="autocomplete" placeholder="Enter your address" type="text"></input>
+    <div class="container">
+      <h1 class="buzz">Buzz Finder</h1>
+      
+      <h2>Search for nearby coffee shops!</h2>
+
+      <div id="locationField">
+        <input id="autocomplete" placeholder="Enter an address or city" type="text"></input>
+      </div>
+
+      <div id="results">
+          <ol id="places"></ol><ol id="addresses"></ol>
+
+          <!-- <ul id="places"></ul> -->
+          <!-- <ul id="addresses"></ul> -->
+      </div>
     </div>
-
-    <!-- <ul id="results"></ul> -->
-
-   <!--  <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div> -->
-
-    <div id="results">
-        <ul id="places"></ul>
-      <!-- <button id="more">More results</button> -->
-    </div>
-
 
   </body>
 </html>

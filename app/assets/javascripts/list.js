@@ -26,6 +26,7 @@ var initialize = function() {
 
     // console.log(request + " firing");
     placesList = document.getElementById('places');
+    addressesList = document.getElementById('addresses');
 
     var service = new google.maps.places.PlacesService(placesList);
     service.nearbySearch(request, callBack);
@@ -45,7 +46,9 @@ function callBack(results, status) {
 function createListOfCoffeeShops(shops) {
   // console.log('createListOfCoffeeShops FIRING');
   // console.log(shops);
-  for (var i = 10, shop; shop = shops[i]; i--) {
-    placesList.innerHTML += '<li>' + shop.name + '</li>';
+  for (var i = 9, shop; shop = shops[i]; i--) {
+    placesList.innerHTML += '<li>' + shop.name + '<p>' + shop.vicinity + '</p>' + '</li>';
+    // addressesList.innerHTML += '<li>' + shop.vicinity + '</li>';
+    // addressesList.innerHTML += '<li>' + shop.vicinity + '</li>';
   }
 }
