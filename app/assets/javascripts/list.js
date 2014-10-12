@@ -8,7 +8,6 @@ var initialize = function() {
 
   autocomplete = new google.maps.places.Autocomplete(
     /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
-      // { types: ['geocode'] });
       { types: ['geocode'] });
    
   google.maps.event.addListener(autocomplete, 'place_changed', function() {
@@ -48,7 +47,5 @@ function createListOfCoffeeShops(shops) {
   // console.log(shops);
   for (var i = 9, shop; shop = shops[i]; i--) {
     placesList.innerHTML += '<li>' + shop.name + '<p>' + shop.vicinity + '</p>' + '</li>';
-    // addressesList.innerHTML += '<li>' + shop.vicinity + '</li>';
-    // addressesList.innerHTML += '<li>' + shop.vicinity + '</li>';
   }
 }

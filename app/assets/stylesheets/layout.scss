@@ -9,6 +9,7 @@ body {
 .container {
   background-color: rgba(255,255,255,0.90);
   border: .01em black solid;
+  border-radius: 20px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, .35);
   font-size: 20px;
   font-weight: bolder;
@@ -16,33 +17,38 @@ body {
   padding: 10px;
   overflow: auto;
   width: 450px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: bolder;
+  }
+
+  div input#autocomplete {
+    font-size: 15px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  div#results {
+    padding-left: 30px;
+  }
+
+  div li {
+    font-size: 15px;
+    font-weight: bold;
+    list-style-type: decimal;
+    padding: 2px;
+  }
+
+  div p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
 }
 
-.container h1 {
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.container h2 {
-  font-size: 13px;
-  font-weight: bolder;
-}
-
-.container div input#autocomplete {
-  font-size: 15px;
-  width: 400px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.container div li {
-  font-size: 15px;
-  font-weight: bold;
-  list-style: ordered;
-  padding: 2px;
-}
-
-.container div p {
-  font-size: 12px;
-  font-weight: lighter;
-}
