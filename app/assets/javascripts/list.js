@@ -28,6 +28,7 @@ var initialize = function() {
     addressesList = document.getElementById('addresses');
 
     var service = new google.maps.places.PlacesService(placesList);
+    
     service.nearbySearch(request, callBack);
   });
 };

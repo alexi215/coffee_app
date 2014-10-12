@@ -29,13 +29,15 @@ body {
   }
 
   div input#autocomplete {
+    border-radius: 10px;
     font-size: 15px;
-    width: 400px;
     margin-bottom: 10px;
     margin-top: 10px;
+    width: 400px;
   }
   
   div#results {
+    margin-top: 35px;
     padding-left: 30px;
   }
 
@@ -50,5 +52,22 @@ body {
     font-size: 12px;
     font-weight: lighter;
   }
+
+  button {
+    background-color: #4F2512;
+    border: 1px solid darken(blue, 50);
+    border-radius: 15px;
+    color: #fff;
+    float: left;
+    font: #F5ECC3;
+    font-size: 10px;
+    font-weight: bolder;
+    height: 20px;
+    padding: 0;
+    position: relative; right: 5px;
+    margin-left: 8px;
+    width: 100px;
+  }
+
 }
 
