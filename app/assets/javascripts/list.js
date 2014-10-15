@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var autocomplete, placesList, plainAddress, latLong, service;
+    var autocomplete, placesList, latLong, service;
     initialize();
 });
 
@@ -9,12 +9,11 @@ var initialize = function() {
       { types: ['geocode'] });
    
   google.maps.event.addListener(autocomplete, 'place_changed', function() {
-    plainAddress = autocomplete.getPlace().formatted_address;
     latLong = autocomplete.getPlace().geometry.location;
     
     var request = {
       location: latLong,
-      radius: 5000,
+      radius: 1610, // ~ approximately 1 mile
       keyword: 'coffee shop'
     };
 
