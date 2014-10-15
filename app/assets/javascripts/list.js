@@ -25,7 +25,7 @@ var initialize = function() {
 
     // console.log(request + " firing");
     placesList = document.getElementById('places');
-    addressesList = document.getElementById('addresses');
+
 
     var service = new google.maps.places.PlacesService(placesList);
     
@@ -39,6 +39,7 @@ function callBack(results, status) {
     alert(status);
     return;
   } else {
+    console.log(results);
     createListOfCoffeeShops(results);
   }
 }
@@ -46,7 +47,18 @@ function callBack(results, status) {
 function createListOfCoffeeShops(shops) {
   // console.log('createListOfCoffeeShops FIRING');
   // console.log(shops);
-  for (var i = 9, shop; shop = shops[i]; i--) {
+  
+  var limit;
+
+  if (shops.length > 10) {
+    limit = 10;
+  } else {
+    limit = shops.length;
+    console.log(limit);
+  }
+  
+  for (var i = 0; i < limit; i++) {
+    var shop = shops[i];
     placesList.innerHTML += '<li>' + shop.name + '<p>' + shop.vicinity + '</p>' + '</li>';
   }
 }
